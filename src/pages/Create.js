@@ -1,6 +1,6 @@
 import { useLoaderData, Form } from "react-router-dom";
 import Post from "../components/Post";
-const Index = (props) => {
+const Create = (props) => {
     const schedules = useLoaderData()
 
     return <>
@@ -16,4 +16,4 @@ const Index = (props) => {
     {schedules.map(post => <Post key={post.id} post={post}/>)}</>
   };
   
-  export default Index;
+  export default Create;

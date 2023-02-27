@@ -12,11 +12,13 @@ const Post = (props) => {
     };
   
     return (
-      <div style={div}>
-        <Link to={`/post/${post.id}`}>
-          <h1>{post.title}</h1>
-        </Link>
-        <h2>{post.date}</h2>
+      <div className="schedContainer">
+        <div style={div}>
+          <Link to={`/post/${post.id}`}>
+            <h1>{post.title}</h1>
+          </Link>
+          <h4>{post.date}</h4>
+        </div>
       </div>
     );
   };

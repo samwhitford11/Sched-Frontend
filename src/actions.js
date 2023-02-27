@@ -42,8 +42,6 @@ export async function UpdateAction ({ request, params }){
         location: formData.get("location"),
         notes: formData.get("notes"),
     }
-
-
     // send request to backend
     await fetch(url + params.id + "/", {
         method: "put",
