@@ -16,11 +16,3 @@ export async function ShowLoader({params}){
     return data
 }
 
-export async function CreateLoader(){
-    const response = await fetch(url)
-    const data = await response.json()
-
-    console.log("CREATE LOADER:", data)
-
-    return data
-}

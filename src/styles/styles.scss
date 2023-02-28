@@ -1,0 +1,136 @@
+
+
+* {
+    padding: 0; 
+    margin: 0; 
+} 
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+.header {
+    background-color: rgba($color: #6527e2, $alpha: .8);
+    height: 20vh;
+    color: white;
+    display: flex;
+    padding: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.footerContainer {
+    background-color: rgba($color: #6527e2, $alpha: .8);
+    height: 20vh;
+    color: white;
+    display: flex;
+    padding: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.indexForm {
+    display: grid;
+    padding: 2rem;
+    // grid-template-areas: "title ";
+    column-gap: 5px;
+    justify-self: center;
+    input {
+        padding:.5rem;
+        margin:.5rem;
+    }
+}
+
+.button-27 {
+          appearance: none;
+          background-color: #000000;
+          border: 2px solid #1A1A1A;
+          border-radius: 15px;
+          box-sizing: border-box;
+          color: #FFFFFF;
+          cursor: pointer;
+          display: inline;
+          font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+          font-size: 16px;
+          font-weight: 600;
+          line-height: normal;
+          margin: 10px;
+          min-height: 60px;
+          min-width: 50px;
+          max-width: 300px;
+          min-width: 0;
+          outline: none;
+          padding: 16px 24px;
+          text-align: center;
+          text-decoration: none;
+          transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+          user-select: none;
+          -webkit-user-select: none;
+          touch-action: manipulation;
+          width: 20%;
+          will-change: transform;
+        }
+        
+        .button-27:disabled {
+          pointer-events: none;
+        }
+        
+        .button-27:hover {
+          box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+          transform: translateY(-2px);
+        }
+        
+        .button-27:active {
+          box-shadow: none;
+          transform: translateY(0);
+        } 
+// }
+
+h2 {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.schedContainer{
+    background-color: #d7d8da;
+    display: grid;
+    column-gap: 50px;
+    justify-self: center;
+    padding: 2rem;
+    margin: 20px;
+    border-radius: 2%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    h4 {
+        margin:10px;
+    }
+    
+}
+
+.showContainer {
+    display: grid;
+    padding: 2rem;
+    // grid-template-areas: "title ";
+    column-gap: 5px;
+    justify-self: center;
+    input {
+        padding:.5rem;
+        margin:.5rem;
+    }
+    input.textBox {
+        // height:75px;
+    // width:300px;
+    // font-size:10pt;
+    // size: 20px;
+    // display: flex;
+    // padding: 10px;
+    // align-items: center;
+    // justify-content: center;
+    }
+}
+
+h1.mySched {
+    color:rgb(64, 0, 128);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}

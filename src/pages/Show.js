@@ -6,17 +6,15 @@ const Show = (props) => {
   //styles
   const div = {
     textAlign: "center",
-    border: "3px solid green",
     width: "80%",
-    margin: "30px auto",
+    margin: "px auto",
   };
   return (
     <div style={div}>
       <h1>{post.title}</h1>
-      <h2>{post.date}</h2>
       <div>
         <h2> Update </h2>
-        <Form action={`/update/${post.id}`} method="post">
+        <Form className="showContainer" action={`/update/${post.id}`} method="post">
           <input 
           type="text" 
           name="title" 
@@ -37,19 +35,20 @@ const Show = (props) => {
           name="location" 
           placeholder="location"
           defaultValue={post.location}/>
-          <input 
+          <input
+          class="textBox"
           type="text" 
           name="notes" 
           placeholder="notes"
           defaultValue={post.notes}/>
-          <button>Update</button>
+          <button class="button-27">Update</button>
         </Form>
-        <Form action={`/delete/${post.id}`} method="post">
-            <button>Delete</button>
+        <Form class="delete"action={`/delete/${post.id}`} method="post">
+            <button class="button-27">Delete</button>
         </Form>
       </div>
       <Link to="/">
-        <button>Return</button>
+        <button class="button-27">Return</button>
       </Link>
     </div>
   );
